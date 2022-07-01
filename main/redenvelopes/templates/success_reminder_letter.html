@@ -1,0 +1,35 @@
+{% load inlinecss %}
+{% inlinecss "templates/email_template.css" %}
+<table class="body" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="2" class="toast">Dear {{ username }},</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="content">
+        恭喜您，參與了2022年新年抽紅包活動，並抽到了 {{prize}} 大紅包！！
+        <br />
+        請將此封郵件截圖並於48小時上傳群組內，逾時視同放棄領取紅包資格！
+      </td>
+    </tr>
+    <tr>
+      <td></td>  
+      <td class="content">
+        如果有任何疑難雜症，請通知帥哥本人我，也不一定會修啦 ㄏ 
+        <br />
+        如果可以，可以回信說說下次想要有什麼新的功能或是不同的活動方式，同樣我也不一定會做啦，ㄏ
+
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="content">
+        祝大家新年快樂，以後飛黃騰達不要忘記我
+        <br />
+        Nick Lee
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endinlinecss %}

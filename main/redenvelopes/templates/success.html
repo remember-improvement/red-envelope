@@ -1,0 +1,42 @@
+<!doctype html>
+    {% load static %}
+<head>
+    <style>
+        @font-face {
+            font-family: handwritten;
+            src: url('{% static "Andika.ttf"%}')
+        }
+        .back{
+            background-image: url('{% static "newyear.jpeg"%}');
+            background-position: center;
+            color:azure;
+            font-family: handwritten;
+        }
+        .flex{
+            
+            text-align: center;
+            align-items:center;
+            justify-content:center;
+            
+        }
+        .flex div{
+            width: 500px;
+            height: 500px;
+        }
+        span{
+                color:red;
+            }
+       
+    </style>
+    
+    
+    <html>
+        <body class="back">     
+            
+            <div class="flex">  
+                <h1>恭喜！您抽中了 <span>{{prize}}</span> 元紅包！新年快樂！</h1>  
+                <h1>請去登入時所填信箱收信，並截圖上傳到群組領取紅包喔～</h1>
+              </div>
+        </body>
+    </html>
+    </head>
